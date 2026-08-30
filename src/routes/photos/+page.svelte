@@ -9,6 +9,7 @@
 </svelte:head>
 
 <section class="wrap head">
+	<p class="eyebrow">from shifts</p>
 	<h1>photos</h1>
 </section>
 

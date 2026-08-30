@@ -7,6 +7,7 @@
 </svelte:head>
 
 <section class="wrap head">
+	<p class="eyebrow">back issues</p>
 	<h1>newsletters</h1>
 </section>
 
