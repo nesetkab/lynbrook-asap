@@ -240,8 +240,16 @@
 		}
 
 		.art {
-			max-width: 26rem;
+			max-width: 24rem;
 			margin-inline: auto;
+		}
+
+		.snap.a {
+			left: 0;
+		}
+
+		.snap.b {
+			right: 0;
 		}
 	}
 </style>
