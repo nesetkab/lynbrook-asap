@@ -1,42 +1,30 @@
-# sv
+# lynbrook asap
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+site for the animal services and protection club at lynbrook high school.
 
-## Creating a project
+live: https://lynbrookasap.vercel.app
 
-If you're seeing this, you've probably already done this step. Congrats!
+sveltekit, prerendered to static files with `adapter-static`.
 
-```sh
-# create a new project
-npx sv create my-app
 ```
-
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-npx sv@0.17.0 create --template minimal --types ts --install npm .
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+## deploying
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```
+vercel --prod
+```
+
+the github remote is called `github`, not `origin`. vercel blocks cli deploys
+that carry git metadata from a github account it does not recognise, so the
+remote is kept off the name the cli looks for. link the github account under
+vercel account settings and the remote can go back to `origin`.
+
+## content
+
+everything editable lives in `src/lib/data.ts` — officers, volunteer orgs,
+newsletter issues, the hours form and points sheet links. photos are in
+`static/photos`, newsletters in `static/news`.
