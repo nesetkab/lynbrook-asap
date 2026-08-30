@@ -8,7 +8,6 @@
 
 <section class="wrap head">
 	<div>
-		<p class="eyebrow">what this is</p>
 		<h1>about</h1>
 		<p class="lede">
 			asap is a club at lynbrook for protecting animals, mostly by putting students in front of the
