@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { hoursForm } from '$lib/data';
+
+	const words = ['rabbits', 'shelter dogs', 'cats', 'foster', 'adoption drives', 'bird sanctuaries'];
 </script>
 
 <svelte:head>
@@ -12,7 +14,6 @@
 
 <section class="hero wrap">
 	<div class="type">
-		<p class="eyebrow">lynbrook high school</p>
 		<h1>
 			animal
 			<em>services</em>
@@ -42,28 +43,18 @@
 
 <div class="strip">
 	<div class="track">
-		{#each { length: 3 } as _}
-			<span>rabbits</span><i>·</i><span>shelter dogs</span><i>·</i><span>cats</span><i>·</i><span
-				>foster</span
-			><i>·</i><span>adoption drives</span><i>·</i><span>bird sanctuaries</span><i>·</i>
+		{#each [0, 1] as copy}
+			<div class="group" aria-hidden={copy === 1 ? 'true' : undefined}>
+				{#each [0, 1, 2] as pass}
+					{#each words as word}
+						<span>{word}</span>
+						<i>·</i>
+					{/each}
+				{/each}
+			</div>
 		{/each}
 	</div>
 </div>
-
-<section class="wrap two">
-	<div>
-		<h2>room 72, mondays at brunch</h2>
-		<p class="lede">
-			come by. no sign up, no dues, nothing to bring. we go over what is open that week and who is
-			driving.
-		</p>
-	</div>
-	<div class="links">
-		<a href="/about">who runs this</a>
-		<a href="/photos">what it looks like</a>
-		<a href="/news">newsletters</a>
-	</div>
-</section>
 
 <style>
 	.hero {
@@ -173,13 +164,21 @@
 
 	.track {
 		display: flex;
-		gap: 1.4rem;
 		width: max-content;
-		white-space: nowrap;
 		font-family: var(--display);
 		font-size: 1.15rem;
 		font-variation-settings: 'SOFT' 90, 'WONK' 1;
-		animation: slide 42s linear infinite;
+		animation: slide 62s linear infinite;
+	}
+
+	.group {
+		display: flex;
+		flex: 0 0 auto;
+		gap: 1.4rem;
+		min-width: 100vw;
+		justify-content: space-around;
+		white-space: nowrap;
+		padding-right: 1.4rem;
 	}
 
 	.track i {
@@ -189,7 +188,7 @@
 
 	@keyframes slide {
 		to {
-			transform: translateX(-33.333%);
+			transform: translateX(-50%);
 		}
 	}
 
@@ -199,43 +198,8 @@
 		}
 	}
 
-	.two {
-		display: grid;
-		grid-template-columns: 1.2fr 0.8fr;
-		gap: 3rem;
-		padding-block: clamp(3.5rem, 8vw, 6rem);
-		align-items: start;
-	}
-
-	.two h2 {
-		font-size: clamp(2rem, 4vw, 3rem);
-		margin-bottom: 1rem;
-	}
-
-	.links {
-		display: flex;
-		flex-direction: column;
-		gap: 0.2rem;
-		font-family: var(--display);
-		font-size: 1.5rem;
-		font-variation-settings: 'SOFT' 90, 'WONK' 1;
-	}
-
-	.links a {
-		text-decoration: none;
-		border-bottom: 1px solid var(--rule);
-		padding-block: 0.6rem;
-		transition: color 0.2s, padding-left 0.2s;
-	}
-
-	.links a:hover {
-		color: var(--plum);
-		padding-left: 0.5rem;
-	}
-
 	@media (max-width: 860px) {
-		.hero,
-		.two {
+		.hero {
 			grid-template-columns: 1fr;
 		}
 

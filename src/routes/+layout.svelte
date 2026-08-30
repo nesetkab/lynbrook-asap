@@ -7,11 +7,11 @@
 	let { children } = $props();
 
 	const nav = [
+		{ href: '/about', label: 'about' },
 		{ href: '/volunteer', label: 'volunteer' },
 		{ href: '/hours', label: 'hours' },
 		{ href: '/photos', label: 'photos' },
-		{ href: '/news', label: 'newsletters' },
-		{ href: '/about', label: 'about' }
+		{ href: '/news', label: 'newsletters' }
 	];
 
 	let open = $state(false);
