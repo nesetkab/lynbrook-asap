@@ -154,9 +154,9 @@
 	}
 
 	.snap.b {
-		right: -6%;
-		top: 8%;
-		width: 32%;
+		right: -8%;
+		top: -3%;
+		width: 31%;
 		transform: rotate(6deg);
 	}
 

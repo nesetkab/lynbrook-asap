@@ -141,7 +141,7 @@
 	}
 
 	footer {
-		margin-top: 7rem;
+		margin-top: 4rem;
 	}
 
 	footer .inner {
