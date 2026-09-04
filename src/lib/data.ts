@@ -48,7 +48,7 @@ export const orgs = [
 		name: 'Cat Resource Center',
 		where: 'santa clara, ca',
 		kind: 'cats',
-		notes: ['ask us at a meeting and we will point you to the right person'],
+		notes: ['contact us for more info'],
 		links: []
 	},
 	{

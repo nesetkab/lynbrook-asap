@@ -9,9 +9,6 @@
 <section class="wrap head">
 	<p class="eyebrow">places to go</p>
 	<h1>volunteer</h1>
-	<p class="lede">
-		everything here takes students. some want an application first, some just want you to email.
-	</p>
 </section>
 
 <section class="wrap list">
