@@ -11,8 +11,9 @@
 		<p class="eyebrow">what this is</p>
 		<h1>about</h1>
 		<p class="lede">
-			asap is a club at lynbrook for protecting animals, mostly by putting students in front of the
-			shelters and rescues that need them.
+			ASAP is a service club at Lynbrook High School for protecting animals through volunteering and
+			hands-on commitments. we host social events and collaborate with clubs to contribute to the
+			cause of animal welfare; check us out :)
 		</p>
 		<p class="lede">we meet every monday during brunch in room 72.</p>
 	</div>

@@ -57,7 +57,7 @@
 	<div class="wrap inner">
 		<div>
 			<p class="big">lynbrook asap</p>
-			<p class="small">animal services &amp; protection · room 72, mondays at brunch</p>
+			<p class="small">animal services &amp; protection · room 72, mondays @ brunch</p>
 		</div>
 		<div class="right">
 			<a href="mailto:{email}">{email}</a>

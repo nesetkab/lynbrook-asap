@@ -21,8 +21,7 @@
 			protection
 		</h1>
 		<p class="lede">
-			we find shelters that need hands, and we show up. rabbits, dogs, cats, birds, whatever needs
-			it.
+			hey! we are Lynbrook ASAP, a service club dedicated to the welfare of animals, big and small.
 		</p>
 		<div class="cta">
 			<a class="fill" href="/volunteer">find somewhere to go</a>
