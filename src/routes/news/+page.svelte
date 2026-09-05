@@ -7,16 +7,21 @@
 </svelte:head>
 
 <section class="wrap head">
-	<p class="eyebrow">back issues</p>
 	<h1>newsletters</h1>
 </section>
 
 <section class="wrap shelf">
 	{#each newsletters as issue, i}
-		<figure style="--t: {i % 2 ? 1.5 : -1.8}deg">
-			<img src={issue.src} alt={issue.title} loading="lazy" />
-			<figcaption>{issue.title}</figcaption>
-		</figure>
+		<a
+			class="issue"
+			href={issue.src}
+			target="_blank"
+			rel="noreferrer"
+			style="--t: {i % 2 ? 1.5 : -1.8}deg"
+		>
+			<img src={issue.src} alt="{issue.title} newsletter" loading="lazy" />
+			<span class="cap">{issue.title} <i>open &#8599;</i></span>
+		</a>
 	{/each}
 </section>
 
@@ -37,27 +42,46 @@
 		padding-bottom: 2rem;
 	}
 
-	figure {
-		margin: 0;
+	.issue {
+		display: block;
+		text-decoration: none;
 		transform: rotate(var(--t));
 		transition: transform 0.25s;
 	}
 
-	figure:hover {
+	.issue:hover,
+	.issue:focus-visible {
 		transform: rotate(0deg) translateY(-6px);
 	}
 
-	figure img {
+	.issue img {
 		width: 100%;
 		border: 1px solid var(--rule);
 		box-shadow: 0 16px 40px -26px rgba(50, 25, 70, 0.7);
 	}
 
-	figcaption {
+	.cap {
+		display: block;
 		margin-top: 0.8rem;
 		font-family: var(--display);
 		font-size: 1.2rem;
 		font-variation-settings: 'SOFT' 90, 'WONK' 1;
 		color: var(--plum);
+	}
+
+	.cap i {
+		font-family: var(--body);
+		font-style: normal;
+		font-size: 0.72rem;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: var(--ink-soft);
+		opacity: 0;
+		transition: opacity 0.2s;
+	}
+
+	.issue:hover .cap i,
+	.issue:focus-visible .cap i {
+		opacity: 1;
 	}
 </style>

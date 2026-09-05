@@ -32,7 +32,7 @@
 	<div class="bar wrap">
 		<a class="brand" href="/">
 			<span class="mark"><Mark /></span>
-			<span>asap</span>
+			<span>lynbrook asap</span>
 		</a>
 
 		<button class="toggle" onclick={() => (open = !open)} aria-label="menu">
@@ -92,6 +92,7 @@
 		font-size: 1.35rem;
 		font-variation-settings: 'SOFT' 80, 'WONK' 1;
 		letter-spacing: -0.02em;
+		white-space: nowrap;
 	}
 
 	.brand .mark {

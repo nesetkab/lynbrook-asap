@@ -7,7 +7,6 @@
 </svelte:head>
 
 <section class="wrap head">
-	<p class="eyebrow">places to go</p>
 	<h1>volunteer</h1>
 </section>
 

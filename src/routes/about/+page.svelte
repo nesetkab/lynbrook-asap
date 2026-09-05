@@ -8,7 +8,6 @@
 
 <section class="wrap head">
 	<div>
-		<p class="eyebrow">what this is</p>
 		<h1>about</h1>
 		<p class="lede">
 			ASAP is a service club at Lynbrook High School for protecting animals through volunteering and
