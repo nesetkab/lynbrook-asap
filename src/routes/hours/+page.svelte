@@ -28,8 +28,7 @@
 <section class="wrap note">
 	<hr class="rule" />
 	<p>
-		notice a mistake? email <a href="mailto:{email}">{email}</a>, message an officer, or catch us at
-		the end of a meeting.
+		notice a mistake? email <a href="mailto:{email}">{email}</a> :).
 	</p>
 </section>
 

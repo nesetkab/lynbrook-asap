@@ -95,4 +95,4 @@ export const hoursForm = 'https://tinyurl.com/asapvolunteering2526';
 export const pointsSheet = 'https://tinyurl.com/asappoints2526';
 export const email = 'lynbrookasap@gmail.com';
 
-export const socials = [{ label: 'instagram', href: 'https://www.instagram.com/lynbrookasap/' }];
+export const socials = [{ label: '@lynbrookasap', href: 'https://www.instagram.com/lynbrookasap/' }];
