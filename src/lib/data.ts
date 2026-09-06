@@ -75,11 +75,18 @@ export const orgs = [
 
 // each issue lists its pages in order. the first page is the cover shown on the
 // shelf; clicking an issue opens every page. drop new scans in static/news and
-// add them here.
+// add them here, newest issue first.
 export const newsletters: { title: string; pages: string[] }[] = [
-	{ title: 'february 2023', pages: ['/news/winter.jpg'] },
-	{ title: 'november 2022', pages: ['/news/fall.jpg'] },
-	{ title: 'october 2021', pages: ['/news/2021-2022.png'] }
+	{ title: 'february 2023', pages: ['/news/2023-02-p1.webp', '/news/2023-02-p2.webp'] },
+	{
+		title: 'november 2022',
+		pages: ['/news/2022-11-p1.webp', '/news/2022-11-p2.webp', '/news/2022-11-p3.webp']
+	},
+	{ title: 'april 2022', pages: ['/news/2022-04-p1.webp', '/news/2022-04-p2.webp'] },
+	{ title: 'february 2022', pages: ['/news/2022-02-p1.webp', '/news/2022-02-p2.webp'] },
+	{ title: 'january 2022', pages: ['/news/2022-01-p1.webp', '/news/2022-01-p2.webp'] },
+	{ title: 'december 2021', pages: ['/news/2021-12-p1.webp', '/news/2021-12-p2.webp'] },
+	{ title: 'october 2021', pages: ['/news/2021-10-p1.webp', '/news/2021-10-p2.webp'] }
 ];
 
 export const photos = Array.from({ length: 18 }, (_, i) => `/photos/p${String(i + 1).padStart(2, '0')}.jpg`);
