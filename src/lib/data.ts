@@ -73,10 +73,13 @@ export const orgs = [
 	}
 ];
 
-export const newsletters = [
-	{ title: 'february 2023', src: '/news/winter.jpg' },
-	{ title: 'november 2022', src: '/news/fall.jpg' },
-	{ title: 'october 2021', src: '/news/2021-2022.png' }
+// each issue lists its pages in order. the first page is the cover shown on the
+// shelf; clicking an issue opens every page. drop new scans in static/news and
+// add them here.
+export const newsletters: { title: string; pages: string[] }[] = [
+	{ title: 'february 2023', pages: ['/news/winter.jpg'] },
+	{ title: 'november 2022', pages: ['/news/fall.jpg'] },
+	{ title: 'october 2021', pages: ['/news/2021-2022.png'] }
 ];
 
 export const photos = Array.from({ length: 18 }, (_, i) => `/photos/p${String(i + 1).padStart(2, '0')}.jpg`);
