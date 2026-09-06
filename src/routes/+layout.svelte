@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import { page } from '$app/state';
-	import { email } from '$lib/data';
+	import { email, socials } from '$lib/data';
 	import Mark from '$lib/Mark.svelte';
 
 	let { children } = $props();
@@ -62,6 +62,11 @@
 		<div class="right">
 			<a href="mailto:{email}">{email}</a>
 			<p class="small">1280 johnson ave, san jose</p>
+			<p class="social">
+				{#each socials as link}
+					<a href={link.href} target="_blank" rel="noreferrer">{link.label}</a>
+				{/each}
+			</p>
 		</div>
 	</div>
 </footer>
@@ -173,6 +178,14 @@
 	.right a {
 		text-decoration-color: var(--lav);
 		text-underline-offset: 4px;
+	}
+
+	.social {
+		display: flex;
+		gap: 1rem;
+		justify-content: flex-end;
+		margin: 0.4rem 0 0;
+		font-size: 0.85rem;
 	}
 
 	@media (max-width: 720px) {

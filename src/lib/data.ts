@@ -94,3 +94,5 @@ export const photos = Array.from({ length: 18 }, (_, i) => `/photos/p${String(i 
 export const hoursForm = 'https://tinyurl.com/asapvolunteering2526';
 export const pointsSheet = 'https://tinyurl.com/asappoints2526';
 export const email = 'lynbrookasap@gmail.com';
+
+export const socials = [{ label: 'instagram', href: 'https://www.instagram.com/lynbrookasap/' }];
